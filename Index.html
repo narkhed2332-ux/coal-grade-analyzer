@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coal Grade Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Coal Grade Analyzer</h2>
+
+<label>Moisture (%)</label>
+<input type="number" id="moisture">
+
+<label>Volatile Matter (%)</label>
+<input type="number" id="vm">
+
+<label>Ash (%)</label>
+<input type="number" id="ash">
+
+<button onclick="analyzeCoal()">Analyze</button>
+
+<h3 id="result"></h3>
+
+<canvas id="chart" width="300"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
